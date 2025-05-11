@@ -61,9 +61,9 @@
             </div>
             <div class="ml-3">
               <h3 class="font-medium text-gray-900">Telepon</h3>
-              <p class="text-sm text-gray-600">(0281) 123-4567</p>
+              <p class="text-sm text-gray-600">+62 85866224051</p>
               <a 
-                href="tel:+6202811234567" 
+                href="tel:+6285866224051" 
                 class="text-sm text-red-600 font-medium flex items-center mt-1"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -130,12 +130,8 @@
               <h3 class="font-medium text-gray-900">Jam Operasional</h3>
               <div class="text-sm text-gray-600">
                 <div class="grid grid-cols-2 gap-1">
-                  <div>Senin - Jumat:</div>
+                  <div>Senin - Minggu:</div>
                   <div>8:00 - 17:00</div>
-                  <div>Sabtu:</div>
-                  <div>8:00 - 15:00</div>
-                  <div>Minggu:</div>
-                  <div>Tutup</div>
                 </div>
               </div>
             </div>
