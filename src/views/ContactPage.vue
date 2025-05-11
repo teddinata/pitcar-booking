@@ -6,19 +6,24 @@
       <div class="bg-white rounded-xl shadow-sm overflow-hidden">
         <!-- Header -->
         <div class="p-4 bg-red-600 text-white">
-          <h2 class="text-lg font-medium">Bengkel Servis Kami</h2>
+          <h2 class="text-lg font-medium">PITCAR Service Purwokerto</h2>
           <p class="text-sm opacity-90">Siap melayani kebutuhan servis kendaraan Anda</p>
         </div>
         
         <!-- Map Section -->
         <div class="h-48 bg-gray-200 relative">
-          <!-- This would be a real map component in production -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <img src="/map-placeholder.jpg" alt="Lokasi Bengkel" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/600x300?text=Peta+Lokasi+Bengkel'" />
-          </div>
+          <!-- Menggunakan Google Maps Embed (Tidak memerlukan API key) -->
+          <iframe
+            class="absolute inset-0 w-full h-full border-0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4121354242286!2d109.25172702149902!3d-7.435851798086348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f01d3e8c2c3%3A0x545910d65183c798!2sPITCAR%20Service!5e0!3m2!1sid!2sid!4v1715600887971!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          
           <div class="absolute bottom-2 right-2">
             <a 
-              href="https://maps.google.com/?q=Bengkel+Servis+Mobil" 
+              href="https://www.google.com/maps/place/PITCAR+Service/@-7.4323995,109.251005,17z/data=!4m10!1m2!2m1!1smap+pitcar+purwokerto!3m6!1s0x2e655f01d3e8c2c3:0x545910d65183c798!8m2!3d-7.4358518!4d109.2542999!15sChVtYXAgcGl0Y2FyIHB1cndva2VydG9aFyIVbWFwIHBpdGNhciBwdXJ3b2tlcnRvkgEQYXV0b19yZXBhaXJfc2hvcJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VNeGEzWkVURkIzRUFFqgFfCggvbS8wNF90YgoJL20vMGIyNHR2EAEqCiIGcGl0Y2FyKCYyHxABIhtLzI-nwzWNTPOxC1JIE_L_kc31oWS5XG6BuncyGRACIhVtYXAgcGl0Y2FyIHB1cndva2VydG_gAQD6AQQIABAk!16s%2Fg%2F11rgn3y14q?entry=ttu" 
               target="_blank"
               class="bg-white px-3 py-1 rounded text-xs font-medium shadow-sm flex items-center"
             >
@@ -43,7 +48,7 @@
             </div>
             <div class="ml-3">
               <h3 class="font-medium text-gray-900">Alamat Bengkel</h3>
-              <p class="text-sm text-gray-600">Jl. Raya Motor No. 123, Surabaya <br>Jawa Timur, Indonesia</p>
+              <p class="text-sm text-gray-600">PITCAR Service Purwokerto<br>Jawa Tengah, Indonesia</p>
             </div>
           </div>
           
@@ -56,15 +61,38 @@
             </div>
             <div class="ml-3">
               <h3 class="font-medium text-gray-900">Telepon</h3>
-              <p class="text-sm text-gray-600">(031) 1234-5678</p>
+              <p class="text-sm text-gray-600">(0281) 123-4567</p>
               <a 
-                href="tel:+62311234578" 
+                href="tel:+6202811234567" 
                 class="text-sm text-red-600 font-medium flex items-center mt-1"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 Hubungi Sekarang
+              </a>
+            </div>
+          </div>
+          
+          <!-- WhatsApp Support (ADDED) -->
+          <div class="flex items-start">
+            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </div>
+            <div class="ml-3">
+              <h3 class="font-medium text-gray-900">WhatsApp</h3>
+              <p class="text-sm text-gray-600">+62 858-6622-4051</p>
+              <a 
+                href="https://wa.me/6285866224051?text=Halo%2C%20saya%20mengalami%20kesulitan%20dalam%20melakukan%20booking%20mandiri.%20Mohon%20bantuan%20Anda." 
+                target="_blank"
+                class="text-sm text-green-600 font-medium flex items-center mt-1"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+                Bantuan Booking Mandiri
               </a>
             </div>
           </div>
@@ -78,9 +106,9 @@
             </div>
             <div class="ml-3">
               <h3 class="font-medium text-gray-900">Email</h3>
-              <p class="text-sm text-gray-600">info@bengkelservis.com</p>
+              <p class="text-sm text-gray-600">info@pitcar.com</p>
               <a 
-                href="mailto:info@bengkelservis.com" 
+                href="mailto:info@pitcar.com" 
                 class="text-sm text-red-600 font-medium flex items-center mt-1"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -111,6 +139,58 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Shortcut Buttons Card (ADDED) -->
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="p-4">
+          <h2 class="text-lg font-medium text-gray-900 mb-4">Butuh Bantuan Cepat?</h2>
+          
+          <div class="grid grid-cols-1 gap-3">
+            <!-- WhatsApp Booking Support -->
+            <a 
+              href="https://wa.me/6285866224051?text=Halo%2C%20saya%20mengalami%20kesulitan%20dalam%20melakukan%20booking%20mandiri.%20Mohon%20bantuan%20Anda." 
+              target="_blank"
+              class="flex items-center justify-between px-4 py-3 bg-green-50 rounded-lg hover:bg-green-100 transition"
+            >
+              <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                </div>
+                <div class="ml-3">
+                  <h3 class="font-medium text-gray-900">Bantuan Booking Mandiri</h3>
+                  <p class="text-sm text-gray-600">Kesulitan dalam self booking? Hubungi kami!</p>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+            
+            <!-- Phone Call -->
+            <a 
+              href="tel:+6285866224051" 
+              class="flex items-center justify-between px-4 py-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition"
+            >
+              <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div class="ml-3">
+                  <h3 class="font-medium text-gray-900">Telepon Langsung</h3>
+                  <p class="text-sm text-gray-600">Bicara dengan customer service kami</p>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -279,7 +359,7 @@
 <script setup>
 import { ref, reactive } from 'vue'
 
-// Contact form state
+// Contact form state - initiate with empty values to avoid undefined
 const form = reactive({
   name: '',
   email: '',
@@ -375,5 +455,30 @@ const submitForm = async () => {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Button hover effects */
+.btn-hover-effect {
+  transition: all 0.3s ease;
+}
+
+.btn-hover-effect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Map styling */
+iframe {
+  filter: grayscale(0.1) contrast(1.1);
 }
 </style>

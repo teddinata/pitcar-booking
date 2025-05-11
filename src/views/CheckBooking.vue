@@ -28,7 +28,7 @@
                   v-model="bookingCode"
                   type="text"
                   placeholder="Masukkan kode booking 6 karakter (contoh: ABC123)"
-                  class="block w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-red-500 focus:border-red-500 text-base"
+                  class="block w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-red-500 focus:border-red-500 text-base uppercase"
                   :class="{ 'border-red-300 bg-red-50': errors.bookingCode }"
                 />
               </div>
@@ -51,7 +51,7 @@
                   v-model="plateNumber"
                   type="text"
                   placeholder="Contoh: B 1234 XYZ"
-                  class="block w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-red-500 focus:border-red-500 text-base"
+                  class="block w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-red-500 focus:border-red-500 text-base uppercase"
                   :class="{ 'border-red-300 bg-red-50': errors.plateNumber }"
                 />
               </div>

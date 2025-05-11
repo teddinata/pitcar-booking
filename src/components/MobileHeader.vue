@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { ArrowLeft } from 'lucide-vue-next'
+import { version } from '../../package.json'
 
 const props = defineProps({
   title: {
@@ -18,6 +19,9 @@ const router = useRouter()
 const goBack = () => {
   router.back()
 }
+
+// Version information dari package.json
+const appVersion = version
 </script>
 
 <template>
@@ -34,9 +38,14 @@ const goBack = () => {
         </button>
         
         <!-- Logo and title -->
-        <div class="flex items-center h-8 px-6 border-b border-gray-50"><!-- <img src="/pitcar-modified.png" alt="PITCAR" class="w-7 h-7" /> -->
+        <div class="flex items-center h-8 px-6 border-b border-gray-50">
           <img src="/pitcar-logo.png" alt="PITCAR" class="w-32" />
         </div>
+      </div>
+      
+      <!-- Version badge -->
+      <div class="text-xs text-gray-500 px-2 py-1 rounded-full bg-gray-100">
+        v{{ appVersion }}
       </div>
     </div>
   </header>
