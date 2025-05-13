@@ -3,6 +3,7 @@
     <!-- Desktop sticky summary - hidden on mobile, visible on desktop -->
     <div class="hidden lg:block">
       <div class="sticky top-4 bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md">
+        <!-- Header section -->
         <div class="bg-gradient-to-r from-red-500 to-red-600 px-4 py-3 border-b border-red-200 flex justify-between items-center">
           <h3 class="text-sm font-medium text-white">Ringkasan Layanan</h3>
           <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-white text-red-600">
@@ -14,7 +15,7 @@
         </div>
         
         <div class="p-4">
-          <!-- Empty state -->
+          <!-- Empty state when no services selected -->
           <div v-if="!hasServices" class="py-6 text-center">
             <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
               <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,9 +38,9 @@
             </div>
           </div>
           
-          <!-- Services summary -->
+          <!-- Services summary when services selected -->
           <div v-else class="space-y-4">
-            <!-- Selected package -->
+            <!-- Selected package card -->
             <div v-if="formData.template_id" class="p-3 bg-yellow-50 rounded-lg border border-yellow-200">
               <div class="flex justify-between items-start">
                 <div class="flex-1 pr-2">
@@ -148,7 +149,7 @@
               </div>
             </div>
 
-            <!-- Additional services -->
+            <!-- Additional services list -->
             <div v-if="visibleServiceIds.length > 0" class="rounded-lg border border-gray-200">
               <div class="bg-gray-50 px-3 py-2 border-b border-gray-200 flex justify-between items-center">
                 <h4 class="text-sm font-medium text-gray-700 flex items-center">
@@ -250,13 +251,28 @@
               </div>
             </div>
             
+            <!-- Informasi Diskon Tambahan - Desktop -->
+            <div class="bg-blue-50 rounded-lg border border-blue-200 p-3">
+              <div class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <p class="text-xs text-blue-800 font-medium mb-1">Harga di atas belum final</p>
+                  <p class="text-xs text-blue-700">
+                    Anda berpotensi mendapatkan diskon tambahan ketika datang ke bengkel. Jika ada penambahan layanan atau parts, Anda juga bisa mendapatkan diskon tambahan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
             <!-- Continue button -->
             <button
               @click="$emit('next-step')"
               :disabled="(formData.service_ids.length === 0 && !formData.template_id)"
               class="w-full inline-flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50"
             >
-              Lanjut ke Jadwal
+              Lanjut Pilih Jadwal
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
@@ -265,10 +281,10 @@
         </div>
       </div>
     </div>
-
-    <!-- Mobile-Optimized Service Summary -->
+<!-- Mobile-Optimized Service Summary -->
     <div class="lg:hidden mt-4 mb-4"> 
       <div v-if="hasServices" class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md">
+        <!-- Mobile Header -->
         <div class="bg-gradient-to-r from-red-500 to-red-600 px-3 py-2 border-b border-red-200 flex justify-between items-center">
           <h3 class="text-sm font-medium text-white flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -479,6 +495,21 @@
               </div>
             </div>
             
+            <!-- Informasi Diskon Tambahan - Mobile -->
+            <div class="mt-3 bg-blue-50 rounded-lg border border-blue-200 p-2">
+              <div class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500 mr-1.5 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <strong><p class="text-xs text-blue-800 font-medium mb-1">Harga di atas belum final</p></strong>
+                  <p class="text-xs text-blue-600">
+                    Anda berpotensi mendapatkan diskon tambahan ketika datang ke bengkel. Jika ada tambahan layanan, juga bisa dapat diskon lagi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
             <!-- Mobile continue button -->
             <div class="mt-3">
               <button
@@ -486,7 +517,7 @@
                 :disabled="(formData.service_ids.length === 0 && !formData.template_id)"
                 class="w-full inline-flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50"
               >
-                Lanjut ke Jadwal
+                Lanjut Pilih Jadwal
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
@@ -625,7 +656,6 @@ export default {
       return packageItem.products;
     });
     
-    // Get all selected services that are not part of the selected package
     // Get all selected services that are not part of the selected package
     const visibleServiceIds = computed(() => {
       if (!props.formData.service_ids || !Array.isArray(props.formData.service_ids)) {
@@ -900,4 +930,4 @@ export default {
     transform: translateY(0);
   }
 }
-</style>
+</style>   

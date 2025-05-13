@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white shadow rounded-lg overflow-hidden">
+  <div class="bg-white shadow rounded-lg overflow-hidden mt-4">
     <div class="px-4 py-5 sm:p-6">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
         <h2 class="text-lg font-medium text-gray-900">Pilih Jenis Servis</h2>
@@ -8,7 +8,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            Diskon 10% untuk Booking Online
+            Tambahan Diskon 10% dengan<br> Booking Online
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
           </svg>
           <div class="ml-3">
             <p class="text-sm text-blue-800 font-medium">HEMAT! Booking online lebih murah</p>
-            <p class="text-xs text-blue-700">Dapatkan diskon 10% untuk semua layanan dengan booking melalui aplikasi.</p>
+            <p class="text-xs text-blue-700">Dapatkan <strong>tambahan diskon 10%</strong> untuk semua layanan dengan booking melalui aplikasi.</p>
           </div>
         </div>
       </div>
@@ -226,7 +226,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
             </svg>
-            Catatan Tambahan
+            Apa Keluhan Mobilnya, nih?
           </label>
           <div class="mt-1">
             <textarea
@@ -263,7 +263,7 @@
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
           </svg>
         </span>
-        Lanjut ke Jadwal
+        Lanjut Pilih Jadwal
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
         </svg>

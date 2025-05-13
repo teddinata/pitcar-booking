@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white shadow rounded-lg overflow-hidden">
+  <div class="bg-white shadow rounded-lg overflow-hidden mt-4">
     <div class="px-4 py-5 sm:p-6">
       <h2 class="text-lg font-medium text-gray-900 mb-6">Konfirmasi Booking</h2>
       

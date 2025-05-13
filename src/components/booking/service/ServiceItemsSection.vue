@@ -1,10 +1,10 @@
 <template>
   <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm mt-4">
     <div class="bg-gray-50 px-4 py-3 border-b border-gray-200 flex justify-between items-center">
-      <h3 class="text-sm font-medium text-gray-700">Layanan Individual</h3>
+      <h3 class="text-sm font-medium text-gray-700">Layanan <br>Non-Paket</h3>
       
       <!-- Search field -->
-      <div class="relative max-w-xs w-full md:w-64">
+      <!-- <div class="relative max-w-xs w-full md:w-64">
         <input
           type="text"
           :value="serviceSearchQuery"
@@ -17,7 +17,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </div>
-      </div>
+      </div> -->
     </div>
     
     <div class="p-4">
@@ -88,7 +88,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
         <p class="mt-2 text-sm text-gray-500">Tidak ada layanan tersedia untuk kategori ini.</p>
-        <p class="text-xs text-gray-400 mt-1">Silakan pilih kategori lain atau periksa paket layanan</p>
+        <p class="text-xs text-gray-400 mt-1">Silakan pilih kategori lain atau periksa paket servis</p>
       </div>
     </div>
   </div>

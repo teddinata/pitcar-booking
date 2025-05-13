@@ -1,7 +1,7 @@
 <template>
   <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
     <div class="bg-gradient-to-r from-red-600 to-red-500 px-4 py-3 border-b border-gray-200 flex justify-between items-center">
-      <h3 class="text-sm font-medium text-white">Paket Layanan</h3>
+      <h3 class="text-sm font-medium text-white">Paket Servis<br>Lebih Hemat</h3>
       <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white text-red-600">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
